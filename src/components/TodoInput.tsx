@@ -4,6 +4,7 @@
 
 import { useState } from "react";
 
+// 
 interface Props {
     onAdd: (text: string) => void;
 }
@@ -13,10 +14,10 @@ export default function TodoInput({onAdd}: Props) {
     const [text, setText] = useState("");
 
     const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault(); //prevent page from refreshing after form submits
-        if(text.trim()) {   //.trim() remove whitespace from start and end
+        e.preventDefault(); // prevent page from refreshing after form submits
+        if(text.trim()) {   // .trim() remove whitespace from start and end
             onAdd(text);
-            setText("");    //reset input
+            setText("");    // reset input
         }
     };
 
@@ -27,6 +28,7 @@ export default function TodoInput({onAdd}: Props) {
             onChange={(e) => setText(e.target.value)}
             placeholder="Add a New To-do"
             />
+            <button type="submit">Add</button>
         </form>
     );
 
