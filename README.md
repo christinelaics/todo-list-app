@@ -2,7 +2,7 @@
 
 Simple To-do List Application
 
-	Core Features (MVP): 
-	- Add a to-do
-	- Delete a to-do
-	- Mark a to-do as complete (toggle)
+Core Features (MVP)
+- Add a To-do Item
+- Delete a To-do Item
+- Mark a To-do Item as complete
