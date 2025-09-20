@@ -25,10 +25,10 @@ export default function App() {
   }
 
   return (
-    <div>
-      <h1>To-Do List</h1>
+    <main className="max-w-md mx-auto mt-10 p-6 bg-white rounded-lg shadow text-center">
+      <h1 className="text-2xl font-bold mb-4">To-Do List</h1>
       <TodoInput onAdd={addTodo}/>
       <TodoList todos={todos} onToggle={toggleTodo} onDelete={deleteTodo}/>
-    </div>
+    </main>
   )
 }

@@ -22,13 +22,14 @@ export default function TodoInput({onAdd}: Props) {
     };
 
     return(
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="pb-6 gap-3">
             <input
+            className="border-1 rounded-md pl-2"
             value={text}
             onChange={(e) => setText(e.target.value)}
             placeholder="Add a New To-do"
             />
-            <button type="submit">Add</button>
+            <button className="hover:bg-black hover:text-white px-1 ml-1 border-1 rounded-md"type="submit">Add</button>
         </form>
     );
 
