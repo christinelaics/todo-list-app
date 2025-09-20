@@ -3,9 +3,11 @@ import type { Todo } from "./types";
 import TodoInput from "./components/TodoInput";
 import TodoList from "./components/TodoList";
 import { addTodoLogic, toggleTodoLogic, deleteTodoLogic } from "./utils/todos";
+import { useLocalStorage } from "./hooks/useLocalStorage";
 
+const STORAGE_KEY = "todo-list:todos-ver1"
 export default function App() {
-  const [todos, setTodos] = useState<Todo[]>([]);
+  const [todos, setTodos] = useLocalStorage<Todo[]>(STORAGE_KEY, []);
 
   // add to-do
   const addTodo = (text: string) => {
