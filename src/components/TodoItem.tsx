@@ -18,7 +18,6 @@ export default function TodoItem({todo, onToggle, onDelete}: Props) {
                 <span
             style={{textDecoration: todo.completed ? "line-through" : "none", cursor: "pointer"}}
             onClick={() => onToggle(todo.id)}
-            className="decoration-red-500"
             >
                 {todo.text}
             </span>

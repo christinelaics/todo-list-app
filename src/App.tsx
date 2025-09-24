@@ -1,4 +1,3 @@
-import { useState } from "react";
 import type { Todo } from "./types";
 import TodoInput from "./components/TodoInput";
 import TodoList from "./components/TodoList";
